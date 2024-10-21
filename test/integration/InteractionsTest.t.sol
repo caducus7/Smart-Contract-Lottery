@@ -14,8 +14,10 @@ contract InteractionsTest is Test, CodeConstants {
     address public USER = makeAddr("user");
 
     uint256 constant STARTING_USER_BALANCE = 10 ether;
+
     event PickedWinner(address indexed winner);
     event RaffleEntered(address indexed player);
+
     uint256 entranceFee;
     uint256 interval;
     address vrfCoordinator;
